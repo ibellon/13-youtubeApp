@@ -17,10 +17,13 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.cargarVideos();
+  }
+
+  cargarVideos(): void {
     this.youtubeService.getVideos().subscribe(resp => {
-        
-        this.videos.push(...resp);
-        console.log(this.videos);
+      this.videos.push(...resp);
+      console.log(this.videos);
     });
   }
 
