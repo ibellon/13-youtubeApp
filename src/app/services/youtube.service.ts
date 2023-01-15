@@ -1,7 +1,7 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map } from 'rxjs';
-import { YoutubeResponse } from '../models/youtube.model';
+import { YoutubeResponse, Video } from '../models/youtube.model';
 
 @Injectable({
   providedIn: 'root'
